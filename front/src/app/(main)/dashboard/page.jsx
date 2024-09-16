@@ -12,11 +12,13 @@ import {
   Legend,
   LinearScale,
 } from "chart.js";
-import DoughnurChart from "@/app/components/dashboard/Doughnut";
+
 import { useContext } from "react";
 import { DashboardContext } from "@/app/context/dashboard-context";
 import IncExpCards from "@/app/components/inc.exp.cards";
 import RecordCard from "@/app/components/dashboard/record-card";
+import DoughnurChart from "@/app/components/dashboard/doughnut";
+
 Chart.register(CategoryScale, LinearScale, BarElement, ArcElement, Legend);
 
 const Dashboard = () => {

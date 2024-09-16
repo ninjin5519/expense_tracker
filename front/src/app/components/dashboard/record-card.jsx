@@ -16,7 +16,15 @@ const RecordCard = ({ transaction }) => {
           <td className="text-xs p-0">{transaction?.updated_at}</td>
         </div>
       </div>
-      <td className="text-red-500 ">{transaction?.amount}</td>
+      <td
+        className={`${
+          transaction.transaction_type === "INC"
+            ? "text-green-600"
+            : "text-red-500"
+        }`}
+      >
+        {transaction?.amount}
+      </td>
     </tr>
   );
 };
