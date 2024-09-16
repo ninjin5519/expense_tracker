@@ -21,7 +21,7 @@ const Records = () => {
         <div>
           <h2 className="mb-3">Today</h2>
           <div className="flex flex-col gap-4">
-            {/* <RecordCard
+            <RecordCard
               recordName="Lend"
               recordDate="2024"
               recordAmount={100}
@@ -30,7 +30,7 @@ const Records = () => {
               recordName="Rent"
               recordDate="2024"
               recordAmount={100}
-            /> */}
+            />
           </div>
         </div>
       </section>

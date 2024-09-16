@@ -18,12 +18,12 @@ const RecordCard = ({ transaction }) => {
       </div>
       <td
         className={`${
-          transaction.transaction_type === "INC"
+          transaction?.transaction_type === "INC"
             ? "text-green-600"
             : "text-red-500"
         }`}
       >
-        {transaction?.amount}
+        - {transaction?.amount}
       </td>
     </tr>
   );
